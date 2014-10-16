@@ -16,5 +16,6 @@ augroup GoLanguage
   au FileType go :nnoremap <buffer> <silent> <Leader>r :GoRun<CR>
   au FileType go :nnoremap <buffer> <silent> <Leader>d :GoDoc<CR>
   au FileType go :nnoremap <buffer> <silent> <Leader>k :GoDef<CR>
+  au FileType go :nnoremap <buffer> <silent> <Leader>i :GoImports<CR>:w<CR>
 augroup END
 
