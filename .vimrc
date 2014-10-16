@@ -9,9 +9,12 @@ let g:syntastic_go_checkers = ['go']
 let g:syntastic_enable_go_checker = 1
 let g:syntastic_mode_map = {'mode': 'passive', 'active_filetypes': ['go']}
 
+let g:ctrlp_open_new_file = 'r'
 
 augroup GoLanguage
   au!
   au FileType go :nnoremap <buffer> <silent> <Leader>r :GoRun<CR>
+  au FileType go :nnoremap <buffer> <silent> <Leader>d :GoDoc<CR>
+  au FileType go :nnoremap <buffer> <silent> <Leader>k :GoDef<CR>
 augroup END
 
